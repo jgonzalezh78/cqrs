@@ -1,0 +1,1 @@
+Proyecto demostrativo del uso de cqrs mac
