@@ -37,4 +37,9 @@ El proyecto es levantado por el puerto 9080, ahora podemos enviarle peticiones a
 
 Podemos consultar los comandos que han llegado a Axon en la siguiente URL http://localhost:8024/#query
 
+Al consultar la consola de H2 puedes identificar los productos dados de alta en el sistema en la URL http://localhost:9080/h2-console con la siguiente consulta
+
+```
+SELECT * FROM PRODUCTS 
+```
 
