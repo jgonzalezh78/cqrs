@@ -45,7 +45,17 @@ SELECT * FROM PRODUCTS
 
 ## Proyecto Ejemplo 2
 
+
 Consta de varios proyectos (microsservicios con spring cloud) los cuales se tienen que ejecutar en el siguiente orden
+
+
+Usaremos Axon Server, si aun no cuentas con el descarga  [Axon Server](https://developer.axoniq.io/download#), descomprime para que puedas ejecutar el archivo *.jar en una terminal
+
+```
+java -jar axonserver.jar
+```
+
+
 
 * Discovery server 
 
