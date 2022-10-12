@@ -43,3 +43,63 @@ Al consultar la consola de H2 puedes identificar los productos dados de alta en 
 SELECT * FROM PRODUCTS 
 ```
 
+## Proyecto Ejemplo 2
+
+Consta de varios proyectos (microsservicios con spring cloud) los cuales se tienen que ejecutar en el siguiente orden
+
+* Discovery server 
+
+```
+clean compile package install
+spring-boot:run
+```
+
+Al terminar de levantar consultar la siguiente URL donde se registran los servicios disponibles http://localhost:8761/
+
+* Gateway server
+
+```
+clean compile package install
+spring-boot:run
+```
+
+Al terminar de levantar consultar la siguiente URL donde se registran los servicios disponibles http://localhost:8761/, se identificara que se registro con Discovery Server
+
+* Servicio de negocio OrderService
+
+```
+clean compile package install
+spring-boot:run
+```
+
+Al terminar de levantar consultar la siguiente URL donde se registran los servicios disponibles http://localhost:8761/, se identificara que se registro con Discovery Server
+
+
+* Servicio de negocio PaymentsService
+
+```
+clean compile package install
+spring-boot:run
+```
+
+Al terminar de levantar consultar la siguiente URL donde se registran los servicios disponibles http://localhost:8761/, se identificara que se registro con Discovery Server
+
+
+* Servicio de negocio ProductsService
+
+```
+clean compile package install
+spring-boot:run
+```
+
+Al terminar de levantar consultar la siguiente URL donde se registran los servicios disponibles http://localhost:8761/, se identificara que se registro con Discovery Server
+
+* Servicio de negocio UsersService
+
+```
+clean compile package install
+spring-boot:run
+```
+
+
+
